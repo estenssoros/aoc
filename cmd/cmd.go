@@ -1,18 +1,19 @@
 package cmd
 
 import (
+	"github.com/estenssoros/aoc/pkg/aoc2023"
 	"github.com/spf13/cobra"
 )
 
-func init(){
+func init() {
 	cmd.AddCommand(
-		// add commands here
+		aoc2023.Cmd,
 	)
 }
 
 var cmd = &cobra.Command{
-	Use:     "aoc",
-	Short:   "",
+	Use:   "aoc",
+	Short: "",
 }
 
 func Execute() error {
